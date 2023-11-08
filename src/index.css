@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.Header {
+  background: #002D62;
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;     
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header input[type="text"] {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: none !important;
+}
+
+.Header button {
+  padding: 10px 20px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .Header {
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    width: auto;
+    height: auto;
+  }
+
+  .Header input[type="text"] {
+    width: 100%;
+    margin-right: 5px;
+    padding: 10px;
+    height: auto;
+  }
+
+  .Header button {
+    width: 20%;
+    align-items: center;
+    height: auto;
+  }
+
+  .dropdown-container {
+    /* margin: auto; */
+    top: 75%;
+    flex-direction: column;
+    background-color: black;
+    z-index: 1; /* Ensure the dropdown is on top of other content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 222px !important;
+    height: auto;
+  }
+}
+
+.search-bar {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 20%;
+  margin-right: 2px;
+  border-radius: 0px !important;
+}
+
+.dropdown-container {
+  position: absolute;
+  margin: auto;
+  top: 75%;
+  flex-direction: column;
+  background-color: black;
+  width: 320px;
+  margin-left: -65px;
+  z-index: 1; /* Ensure the dropdown is on top of other content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid ghostwhite;
+  opacity: 90%;
+  border-top: none;
+}
+
+.saved-queries {
+  padding: 10px;
+  
+}
+
+.saved-query {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.PhotoList {
+  padding: 16px;
+  background-color: #f4f4f4; /* Set your desired background color */
+  margin-top: 90px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.photo-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.photo-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo-item:hover {
+  transform: scale(1.05); 
+}
+
+
+
+/* .saved-query {
+  display: block;
+  margin-bottom: 5px; 
+} */
+
+.saved-queries {
+  margin-top: 10px;
+}
+
+.saved-query {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+/* Add this to your stylesheet.css */
+.modal {
+  /* display: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 90%;
+    /* Adjust the maximum width as needed */
+  }
+
+  .close {
+    top: 5px;
+    right: 5px;
+  }
+
+  .modal-image {
+    max-width: 90%;
+  }
+}
+
+
+/* Style the image and text inside the modal as needed */
