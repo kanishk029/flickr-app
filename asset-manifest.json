@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/flickr-app/static/css/main.a0edd517.css",
+    "main.js": "/flickr-app/static/js/main.75dd1cf0.js",
+    "static/js/787.95dd3545.chunk.js": "/flickr-app/static/js/787.95dd3545.chunk.js",
+    "index.html": "/flickr-app/index.html",
+    "main.a0edd517.css.map": "/flickr-app/static/css/main.a0edd517.css.map",
+    "main.75dd1cf0.js.map": "/flickr-app/static/js/main.75dd1cf0.js.map",
+    "787.95dd3545.chunk.js.map": "/flickr-app/static/js/787.95dd3545.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a0edd517.css",
+    "static/js/main.75dd1cf0.js"
+  ]
+}
